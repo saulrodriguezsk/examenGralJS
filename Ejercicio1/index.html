@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- Define el tipo de documento como HTML -->
+<html lang="es">
+  <!-- Etiqueta inicial del documento, define el idioma al español -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Realiza la codificación de caracteres para admitir acentos y caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Hace que el diseño sea responsivo en dispositivos móviles -->
+    <title>Lista de Tareas</title>
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Enlace a la hoja de estilos externa "styles.css"-->
+  </head>
+  <body>
+    <div class="container">
+      <!-- Contenedor principal para la estructura -->
+      <h1>Lista de Tareas</h1>
+      <!-- Encabezado principal de la página -->
+      <h2>Saúl Rodríguez</h2>
+      <div class="input-section">
+        <!-- Sección donde el usuario puede agregar nuevas tareas -->
+        <input
+          type="text"
+          id="taskInput"
+          placeholder="Agregar una nueva tarea..."
+        />
+        <!-- Campo de entradas, id y textp de ayuda al usuario -->
+        <button onclick="addTask()">Agregar</button>
+        <!-- Botón que ejecuta la función addTask() al hacer clic -->
+      </div>
+      <ul id="taskList"></ul>
+      <!-- Lista desordenada donde se mostrarán las tareas -->
+      <div class="counter">
+        <!-- Contenedor para los contadores de tareas -->
+        <p>Completadas: <span id="completedCount">0</span></p>
+        <!-- Muestra la cantidad de tareas completadas -->
+        <p>Incompletas: <span id="incompleteCount">0</span></p>
+        <!-- Muestra la cantidad de tareas incompletas -->
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <!-- Enlace al archivo JavaScript que maneja la lógica de la aplicación -->
+  </body>
+</html>

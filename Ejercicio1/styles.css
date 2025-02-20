@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif; /* Fuente legible y estándar */
+  background-color: #f4f4f4; /* Color de fondo suave */
+  display: flex; /* Usa flexbox para centrar */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 100vh; /* Ocupa toda la altura de la ventana */
+  margin: 0; /* Elimina márgenes */
+}
+
+.container {
+  background: white; /* Fondo blanco para contraste */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  width: 320px; /* Ampliación del ancho para mejor presentación */
+  text-align: center; /* Alineación centrada */
+}
+
+.input-section {
+  margin-bottom: 10px; /* Espaciado inferior */
+  display: flex; /* Organiza elementos en línea */
+  gap: 5px; /* Genera un espacio entre elementos */
+}
+
+input {
+  flex-grow: 1; /* Hace que el input ocupe el espacio disponible */
+  padding: 8px; /* Mayor área táctil */
+  border: 1px solid #ccc; /* Borde sutil */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+button {
+  padding: 8px 12px; /* Mejora el espaciado */
+  cursor: pointer; /* Cursor de puntero */
+  background-color: #28a745; /* Color verde para acciones positivas */
+  color: white; /* Texto en blanco */
+  border: none; /* Sin bordes */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background 0.3s ease; /* Transición suave */
+}
+
+button:hover {
+  background-color: #218838; /* Color más oscuro en hover */
+}
+
+ul {
+  list-style: none; /* Elimina viñetas */
+  padding: 0; /* Elimina el padding */
+}
+
+li {
+  display: flex; /* Alinea elementos en fila */
+  justify-content: space-between; /* Genera u espacio en el contenido */
+  align-items: center; /* Alinea verticalmente */
+  padding: 8px; /* Genera un interno */
+  background: #e0e0e0; /* Color de fondo */
+  margin-bottom: 5px; /* Genera un espacio entre tareas */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+.completed {
+  text-decoration: line-through; /* Marcar tareas completadas */
+  color: gray; /* Color gris para indicar completado */
+}
